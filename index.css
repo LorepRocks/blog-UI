@@ -25,14 +25,48 @@ header {
   color: white;
   z-index: 2;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0.5rem;
-  background: rgba(255, 255, 255, 0.9);
-}
+  /* background: #654ea3; 
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(101, 78, 163, 0.8),
+    rgb(234, 175, 200, 0.8)
+  ); 
+  background: linear-gradient(
+    to right,
+    rgb(101, 78, 163, 0.8),
+    rgb(234, 175, 200, 0.8)
+  );  */
+  /*  background: #d9a7c7; 
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(255, 252, 220, 0.8),
+    rgb(217, 167, 199, 0.8)
+  ); 
+  background: linear-gradient(
+    to right,
+    rgb(255, 252, 220, 0.8),
+    rgb(217, 167, 199, 0.8)
+  );  */
 
+  background: #ffafbd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(255, 195, 160, 0.8),
+    rgb(217, 167, 199, 0.8)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(255, 195, 160, 0.8),
+    rgb(255, 175, 189, 0.8)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.logo {
+  color: black;
+}
 nav {
   text-align: center;
-  margin: 0.5rem;
   width: 80vw;
 }
 
@@ -64,7 +98,7 @@ main {
 article {
   width: 100%;
   width: 95vw;
-  height: 9rem;
+  height: 10rem;
   margin: 0.3rem;
   border-radius: 2px;
 }
@@ -84,23 +118,21 @@ article {
   width: 100%;
   display: flex;
 }
-.post__date {
-  width: 50%;
+.post__title {
+  width: 80%;
+  display: grid;
+  place-content: start;
+  padding: 2.1rem 1.3rem 0 1.3rem;
 }
 
 .post__date-box {
-  padding: 0.3rem;
-  background-color: rgb(236, 185, 194, 0.3);
   /* rgba(255, 111, 145, 0.4); */
   font-size: 0.65rem;
-  width: 50%;
-  height: 80%;
+  width: 60%;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   font-weight: 400;
   color: #574144;
-  display: grid;
-  place-content: end;
 }
 .post__info {
   display: flex;
@@ -114,12 +146,12 @@ article {
   font-size: 0.55rem;
   padding: 0.1rem 0.3rem;
   margin: 0 0.1rem;
-  background: #bea5a9;
+  background-color: rgb(236, 185, 194, 0.3);
   border-radius: 0.5rem;
 }
 
 .post__options {
-  width: 50%;
+  width: 30%;
   display: flex;
   height: 2.6rem;
   justify-content: flex-end;
@@ -154,38 +186,35 @@ article {
 .post__item {
   width: 100%;
   height: 3rem;
-  padding: 0.5rem 1.35rem;
+  padding: 0 1.35rem;
   letter-spacing: 0.05rem;
 }
-.post__title {
+.post__title_box {
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
 }
 .post__author {
-  font-size: 0.7rem;
+  font-size: 0.55rem;
   color: #9b9393;
   margin-bottom: 0.8rem;
   font-style: italic;
+  padding: 0.1rem 0;
 }
 .post__preview {
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   line-height: 1rem;
-  height: 2rem;
-  white-space: nowrap;
+  height: 3rem;
   color: #535050;
 }
 
-footer {
-  background-color: yellowgreen;
-  height: 2.5rem;
-}
+/*Mobile SideBar*/
 
 .mobile-nav {
-  transform: translateX(100%);
+  transform: translateX(200%);
   position: fixed;
   z-index: 101;
   background: white;
@@ -194,6 +223,42 @@ footer {
   right: 0;
   top: 0;
   transition: transform 300ms linear;
+}
+.mobile-nav__profile {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.profile_photo {
+  background: rgb(255, 175, 189, 0.8);
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem auto;
+  display: flex;
+  align-content: center;
+}
+.profile_photo::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  margin: -0.4rem;
+  border-radius: inherit;
+  background: linear-gradient(
+    to right,
+    rgb(255, 195, 160, 0.8),
+    rgb(217, 167, 199, 0.8)
+  );
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.profile_name {
+  font-size: 0.7rem;
 }
 
 .mobile-nav__items {
@@ -222,4 +287,33 @@ footer {
   display: block !important;
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+footer {
+  height: 2.5rem;
+}
+.footer_options {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.footer_options a {
+  width: 1rem;
+  margin: 0.3rem 1rem;
+  padding: 0.5rem;
+  background-size: cover;
+}
+
+.footer_option_privacy {
+  background: url('img/lock.svg');
+}
+
+.footer_option_instagram {
+  background: url('img/instagram.svg');
+}
+
+.footer_option_twitter {
+  background: url('img/twitter.svg');
 }
