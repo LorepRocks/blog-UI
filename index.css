@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Fira Sans', sans-serif;
 }
@@ -230,14 +231,17 @@ article {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .profile_photo {
-  background: rgb(255, 175, 189, 0.8);
+  background: url('img/women-1.jpg');
+  background-size: cover;
+  background-position: (50%, 50%);
   border-radius: 50%;
   border: 0.2rem solid white;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   margin: 0.5rem auto;
   display: flex;
   align-content: center;
@@ -253,14 +257,26 @@ article {
     rgb(255, 195, 160, 0.8),
     rgb(217, 167, 199, 0.8)
   );
-  width: 4.4rem;
-  height: 4.4rem;
+  width: 5.4rem;
+  height: 5.4rem;
 }
 
 .profile_name {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+.profile_view {
+  text-decoration: none;
+  font-size: 0.65rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 0.3rem;
 }
 
+.mobile-nav__items ul {
+  margin: none;
+  padding: none;
+}
 .mobile-nav__items {
   display: flex;
   flex-direction: column;
@@ -268,21 +284,104 @@ article {
   align-content: center;
   list-style: none;
   text-align: left;
-  margin: 1rem;
-  width: 90%;
-  height: 100%;
+  margin: 1.5rem 1rem;
 }
 
 .mobile-nav__item {
   margin: 1rem 0;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .mobile-nav__item a {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
+}
+.iconbox {
+  display: flex;
+}
+.icon {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.icon-saved-post {
+  background: url('img/bookmark-check.svg');
+}
+.icon-liked-post {
+  background: url('img/like.svg');
+}
+.icon-settings {
+  background: url('img/settings.svg');
+}
+.icon-help {
+  background: url('img/information.svg');
+}
+.icon-logout {
+  background: url('img/off.svg');
+}
+.icon-dark {
+  background: url('img/dark.svg');
+}
+.darkmode {
+  display: flex;
+  justify-content: space-between;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.18rem;
+  height: 1rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 2rem;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 0.75rem;
+  width: 0.75rem;
+  left: 0.25rem;
+  bottom: 0.125rem;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background: rgb(217, 167, 199, 0.8);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(255, 195, 160, 0.8);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
 .open {
   display: block !important;
   opacity: 1 !important;
