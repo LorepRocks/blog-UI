@@ -1,0 +1,38 @@
+.hide-header {
+  top: -50px;
+}
+.show-header {
+  top: 0;
+}
+main {
+  margin-top: 4rem;
+}
+section {
+  padding: 1.3rem;
+}
+.article {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0.5rem auto;
+}
+.article-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.article-info-box {
+  display: flex;
+  font-size: 0.7rem;
+  color: rgb(82, 80, 80);
+}
+.article-date {
+  margin-left: 0.5rem;
+}
+.article-text {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  letter-spacing: 0.01rem;
+  white-space: pre-line;
+}
