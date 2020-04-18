@@ -80,6 +80,18 @@ nav {
 .shadow {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.19);
 }
+.post__tags {
+  display: flex;
+  padding: 0 0.5rem;
+  height: 80%;
+}
+.post__tag {
+  font-size: 0.55rem;
+  padding: 0.1rem 0.3rem;
+  margin: 0 0.1rem;
+  background-color: rgb(236, 185, 194, 0.3);
+  border-radius: 0.5rem;
+}
 
 /*Mobile SideBar*/
 
