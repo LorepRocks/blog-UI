@@ -4,6 +4,7 @@ var backDrop = document.querySelector('.backdrop');
 var btnSave = document.querySelector('.post__options_save');
 var btnShare = document.querySelector('.post__options_share');
 var btnPin = document.querySelector('.post__options_pin');
+var btnClose = document.querySelector('.close');
 
 backDrop.addEventListener('click', function() {
   mobileNav.classList.remove('open');
@@ -42,4 +43,9 @@ btnPin.addEventListener('click', function() {
   });
 
   check ? btnPin.classList.remove('pinned') : btnPin.classList.add('pinned');
+});
+
+btnClose.addEventListener('click', () =>{
+  mobileNav.classList.remove('open');
+  backDrop.classList.remove('open');
 });

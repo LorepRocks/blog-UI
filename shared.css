@@ -76,10 +76,6 @@ nav {
   background-size: cover;
   width: 1.5rem;
 }
-
-.shadow {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.19);
-}
 .post__tags {
   display: flex;
   padding: 0 0.5rem;
@@ -89,12 +85,24 @@ nav {
   font-size: 0.55rem;
   padding: 0.1rem 0.3rem;
   margin: 0 0.1rem;
-  background-color: rgb(236, 185, 194, 0.3);
+  background: #EFDFDC;
   border-radius: 0.5rem;
+}
+.shadow {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.19);
 }
 
 /*Mobile SideBar*/
-
+.close{
+  width: 1rem;
+  height:1rem;
+  background: url('img/close.svg') no-repeat;
+  background-size:cover;
+  position: absolute;
+  top:1rem;
+  right: 1rem;
+  cursor: pointer;
+}
 .mobile-nav {
   transform: translateX(200%);
   position: fixed;
@@ -108,7 +116,7 @@ nav {
 }
 .mobile-nav__profile {
   width: 100%;
-  height: 10rem;
+  height: 15rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -165,7 +173,7 @@ nav {
   align-content: center;
   list-style: none;
   text-align: left;
-  margin: 1.5rem 1rem;
+  margin: -1.5rem 1rem;
 }
 
 .mobile-nav__item {

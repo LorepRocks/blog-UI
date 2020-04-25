@@ -1,0 +1,39 @@
+@media (min-width:500px){
+  .post{
+    height: 12rem;
+  }
+  .post__title_box{
+    font-size: 1.7rem;
+  }
+  .post__preview{
+    height: 5rem;
+  }
+
+  /*Mobile SideBar*/
+  .mobile-nav__profile{
+    height:20rem;
+  }
+  .mobile-nav__items{
+    margin: -2.5rem 1rem;
+  }
+  .mobile-nav__item a{
+    font-size: 1rem;
+  }
+  .profile_name{
+    font-size: 1.3rem;
+  }
+  .profile_view{
+    font-size: 0.85rem;
+  }
+  /*Blog Post*/
+  .wave{
+    background-position: 50% 59%;
+  }
+  .article-title{
+    font-size: 2.3rem;
+  }
+  .article-text{
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+}
