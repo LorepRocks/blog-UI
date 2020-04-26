@@ -62,7 +62,7 @@
   color: rgb(82, 80, 80);
   margin-top: 0.5rem;
 }
-.icon {
+.icon-a {
   width: 0.7rem;
   height: 0.7rem;
   background-size: cover;
@@ -82,6 +82,7 @@
   line-height: 1.5rem;
   letter-spacing: 0.01rem;
   white-space: pre-line;
+  font-weight: 300;
 }
 
 

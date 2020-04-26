@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  height: 2.5rem;
+  height: 3rem;
   width: 100vw;
   position: fixed;
   text-align: center;
@@ -27,7 +27,7 @@ header {
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 1rem;
   /* background: #654ea3; 
   background: -webkit-linear-gradient(
     to right,
@@ -72,9 +72,10 @@ nav {
 }
 
 .toggle-button {
-  background-image: url('img/more-black.svg');
-  background-size: cover;
-  width: 1.5rem;
+  background-image: url('img/more-vertical-black.svg');
+  background-size: contain;
+  width: 1rem;
+  background-repeat: no-repeat;
 }
 .post__tags {
   display: flex;
