@@ -44,6 +44,9 @@ article {
   width: 100%;
   display: flex;
 }
+.post__info_container {
+  height: 100%;
+}
 .post__title {
   width: 100%;
   display: grid;
@@ -85,7 +88,7 @@ article {
 }
 
 .post__options_share {
-  background-image: url('img/direct.svg');
+  background-image: url('img/share.svg');
 }
 .sending {
   background-image: url('img/sending.svg');
@@ -123,4 +126,5 @@ article {
   line-height: 1rem;
   height: 4rem;
   color: #535050;
+  font-weight: 300;
 }

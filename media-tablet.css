@@ -1,0 +1,104 @@
+@media (min-width: 750px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  article:nth-child(3n + 3) {
+    flex-basis: 100%;
+  }
+
+  article:last-child {
+    flex-grow: 2;
+  }
+
+  .post {
+    width: 48%;
+    height: 15rem;
+    flex-grow: 1;
+  }
+  .post__preview {
+    height: 7rem;
+  }
+  .medium {
+    background: #dfe0df;
+  }
+  .large {
+    background: #efdfdc;
+  }
+  .post__tag {
+    background: #cfbcbf;
+  }
+
+  /* Mobile Nav*/
+  .mobile-nav {
+    width: 45%;
+  }
+  .close {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .mobile-nav__profile {
+    height: 30rem;
+  }
+  .profile_photo {
+    width: 8rem;
+    height: 8rem;
+  }
+  .profile_photo::before {
+    width: 8.4rem;
+    height: 8.4rem;
+  }
+  .profile_name {
+    font-size: 1.5rem;
+  }
+  .profile_view {
+    font-size: 0.95rem;
+  }
+  .mobile-nav__items {
+    margin: -5.5rem 1.5rem;
+  }
+  .mobile-nav__item a {
+    font-size: 1.2rem;
+  }
+  .icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  /*POST*/
+  .back-button {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .article-title {
+    font-size: 2.8rem;
+  }
+  .wave {
+    height: 9rem;
+  }
+  .article-props {
+    height: 7rem;
+  }
+  .article-author {
+    font-size: 0.9rem;
+  }
+  .icon-a {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.1rem;
+  }
+  .article-date {
+    font-size: 0.9rem;
+    margin-left: 0.1rem;
+  }
+  .article-tag {
+    background: #bb869d;
+  }
+  .article-text {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+}
