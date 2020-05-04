@@ -5,8 +5,19 @@ var btnSave = document.querySelector('.post__options_save');
 var btnShare = document.querySelector('.post__options_share');
 var btnPin = document.querySelector('.post__options_pin');
 var btnClose = document.querySelector('.close');
+var profilePhoto = document.querySelector('.profile_photo');
+var navElements = document.querySelector('.mobile-nav__items');
 
 
+profilePhoto.addEventListener('click', () => {
+  console.log('____photo clicked!');
+  let visible = false;
+   navElements.classList.forEach(element => {
+    visible = element === 'visible' ? true : false;
+  });
+  visible ? navElements.classList.remove('visible'): navElements.classList.add('visible');
+
+});
 
 backDrop.addEventListener('click', function() {
   mobileNav.classList.remove('open');

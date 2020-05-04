@@ -114,6 +114,7 @@ nav {
   right: 0;
   top: 0;
   transition: transform 300ms linear;
+  color: black;
 }
 .mobile-nav__profile {
   width: 100%;
@@ -126,6 +127,7 @@ nav {
 
 .profile_photo {
   background: url('img/women-1.jpg');
+  /* background: white; */
   background-size: cover;
   background-position: (50%, 50%);
   border-radius: 50%;
@@ -185,6 +187,14 @@ nav {
 .mobile-nav__item a {
   font-size: 0.8rem;
 }
+.mobile-nav__item a:hover{
+  cursor: pointer;
+  color: rgb(217, 167, 199, 1);
+}
+.darkmode a:hover{
+  cursor: unset;
+  color: unset;
+}
 .iconbox {
   display: flex;
 }
@@ -197,6 +207,9 @@ nav {
 }
 .icon-saved-post {
   background: url('img/bookmark-check.svg');
+}
+.icon-home-post{
+  background: url('img/home.svg');
 }
 .icon-liked-post {
   background: url('img/like.svg');
@@ -217,7 +230,9 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-
+.active{
+  color: rgb(217, 167, 199, 1);
+}
 .switch {
   position: relative;
   display: inline-block;

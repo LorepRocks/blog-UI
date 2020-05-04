@@ -14,51 +14,59 @@
        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <div class="backdrop"></div>
+        
         <header class=" header shadow">
+            <div class="backdrop"></div>
             <div class="logo">Logo</div>
             <div class="toggle-button"></div>
-        </header>
-        <nav class="mobile-nav">
-            <div class="close"></div>
-            <div class="mobile-nav__profile">
-                <div class="profile_photo"></div>
-                <div class="profile_name">Lorena Rojas</div>
-                <a class="profile_view" href="#">View Profile</a>
-            </div>
-            <ul class="mobile-nav__items">    
-                <li class="mobile-nav__item darkmode">  
-                <div class="iconbox">  
-                    <span class="icon icon-dark"></span>
-                    <a>Dark Mode</a>
+            <nav class="mobile-nav">
+                <div class="close"></div>
+                <div class="mobile-nav__profile">
+                    <div class="profile_photo"></div>
+                    <div class="profile_container">
+                        <div class="profile_name">Lorena Rojas</div>
+                        <a class="profile_view" href="#">View Profile</a>
+                    </div>
                 </div>
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </li>
-                <li class="mobile-nav__item iconbox">    
-                    <span class="icon icon-saved-post"></span>
-                    <a>Saved Post</a>
-                </li>
-                <li class="mobile-nav__item iconbox">  
-                    <span class="icon icon-liked-post"></span> 
-                    <a>Posts you've liked</a>
-                </li>
-                <li class="mobile-nav__item iconbox">
-                    <span class="icon icon-settings"></span> 
-                    <a>Settings</a>
-                </li>
-                 <li class="mobile-nav__item iconbox">
-                    <span class="icon icon-help"></span> 
-                    <a>Help</a>
-                </li>
-                 <li class="mobile-nav__item iconbox">
-                    <span class="icon icon-logout"></span> 
-                    <a>Logout</a>
-                </li>
-            </ul>
-        </nav>
+                <ul class="mobile-nav__items">    
+                    <li class="mobile-nav__item darkmode">  
+                    <div class="iconbox">  
+                        <span class="icon icon-dark"></span>
+                        <a>Dark Mode</a>
+                    </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                     <li class="mobile-nav__item iconbox">    
+                        <span class="icon icon-home-post"></span>
+                        <a class="active">Home</a>
+                    </li>
+                    <li class="mobile-nav__item iconbox">    
+                        <span class="icon icon-saved-post"></span>
+                        <a>Saved Post</a>
+                    </li>
+                    <li class="mobile-nav__item iconbox">  
+                        <span class="icon icon-liked-post"></span> 
+                        <a>Posts you've liked</a>
+                    </li>
+                    <li class="mobile-nav__item iconbox">
+                        <span class="icon icon-settings"></span> 
+                        <a>Settings</a>
+                    </li>
+                    <li class="mobile-nav__item iconbox">
+                        <span class="icon icon-help"></span> 
+                        <a>Help</a>
+                    </li>
+                    <li class="mobile-nav__item iconbox">
+                        <span class="icon icon-logout"></span> 
+                        <a>Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+       
         <section>
             <main>
                 <article class="post shadow large">
