@@ -7,16 +7,26 @@ var btnPin = document.querySelector('.post__options_pin');
 var btnClose = document.querySelector('.close');
 var profilePhoto = document.querySelector('.profile_photo');
 var navElements = document.querySelector('.mobile-nav__items');
-
+var toogleBtn = document.querySelector('.switch input[type="checkbox"]');
 
 profilePhoto.addEventListener('click', () => {
   console.log('____photo clicked!');
   let visible = false;
-   navElements.classList.forEach(element => {
+  navElements.classList.forEach(element => {
     visible = element === 'visible' ? true : false;
   });
-  visible ? navElements.classList.remove('visible'): navElements.classList.add('visible');
+  visible
+    ? navElements.classList.remove('visible')
+    : navElements.classList.add('visible');
+});
 
+toogleBtn.addEventListener('change', e => {
+  if (e.target.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+  console.log('____dark mode checked');
 });
 
 backDrop.addEventListener('click', function() {
@@ -58,8 +68,7 @@ btnPin.addEventListener('click', function() {
   check ? btnPin.classList.remove('pinned') : btnPin.classList.add('pinned');
 });
 
-btnClose.addEventListener('click', () =>{
+btnClose.addEventListener('click', () => {
   mobileNav.classList.remove('open');
   backDrop.classList.remove('open');
 });
-

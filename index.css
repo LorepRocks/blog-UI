@@ -27,6 +27,7 @@ article {
   height: 12rem;
   margin: 0.3rem;
   border-radius: 2px;
+  background: var(--card-bg-color);
 }
 
 /* article::after {
@@ -80,25 +81,27 @@ article {
   background-size: cover;
 }
 .post__options_save {
-  background-image: url('img/bookmark.svg');
+  background-image: var(--bookmark-icon);
 }
-
+.bookmark {
+  fill: green;
+}
 .saved {
-  background-image: url('img/bookmark-check.svg');
+  background-image: var(--bookmark-check-icon);
 }
 
 .post__options_share {
-  background-image: url('img/share.svg');
+  background-image: var(--share-icon);
 }
 .sending {
   background-image: url('img/sending.svg');
 }
 .post__options_pin {
-  background-image: url('img/pin.svg');
+  background-image: var(--pin-icon);
 }
 
 .pinned {
-  background-image: url('img/pinned.svg');
+  background-image: var(--pinned-icon);
 }
 .post__item {
   width: 100%;
@@ -111,6 +114,7 @@ article {
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
+  color: var(--card-title-color);
 }
 .post__author {
   font-size: 0.55rem;
@@ -125,6 +129,6 @@ article {
   font-size: 0.7rem;
   line-height: 1rem;
   height: 4rem;
-  color: #535050;
+  color: var(--card-preview-color);
   font-weight: 300;
 }

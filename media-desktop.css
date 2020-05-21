@@ -1,7 +1,14 @@
-@media (min-width: 1420px){
+@media (min-width: 1420px) {
   main {
     padding: 3rem 18rem;
   }
-  
-
+  /*POST*/
+  .article-text {
+    padding: 0 20rem 5rem;
+    margin-top: -9rem;
+  }
+  .wave {
+    height: 22rem;
+    background-position: 50% 100%;
+  }
 }
