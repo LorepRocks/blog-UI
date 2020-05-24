@@ -9,6 +9,9 @@ var profilePhoto = document.querySelector('.profile_photo');
 var navElements = document.querySelector('.mobile-nav__items');
 var toogleBtn = document.querySelector('.switch input[type="checkbox"]');
 
+if(localStorage.getItem('dark')){
+  document.documentElement.setAttribute('data-theme', 'dark');
+}
 profilePhoto.addEventListener('click', () => {
   console.log('____photo clicked!');
   let visible = false;
@@ -20,11 +23,18 @@ profilePhoto.addEventListener('click', () => {
     : navElements.classList.add('visible');
 });
 
+btnClose.addEventListener('click', () => {
+  mobileNav.classList.remove('open');
+  backDrop.classList.remove('open');
+});
+
 toogleBtn.addEventListener('change', e => {
   if (e.target.checked) {
     document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('dark','true');
   } else {
     document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.removeItem('dark');
   }
   console.log('____dark mode checked');
 });
@@ -68,7 +78,4 @@ btnPin.addEventListener('click', function() {
   check ? btnPin.classList.remove('pinned') : btnPin.classList.add('pinned');
 });
 
-btnClose.addEventListener('click', () => {
-  mobileNav.classList.remove('open');
-  backDrop.classList.remove('open');
-});
+

@@ -21,10 +21,13 @@
     height: 7rem;
   }
   .medium {
-    background: #dfe0df;
+    background: var(--medium-bg-color);
   }
   .large {
-    background: #efdfdc;
+    background: var(--large-bg-color);
+  }
+  .post__author{
+    font-size: 0.7rem;
   }
   .post__tag {
     background: #cfbcbf;

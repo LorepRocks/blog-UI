@@ -19,6 +19,10 @@
   --instagram-icon: url('img/instagram.svg');
   --twitter-icon: url('img/twitter.svg');
   --tag-bg-color: #efdfdc;
+  --large-bg-color: #efdfdc;
+  --medium-bg-color: #dfe0df;
+  --post-title-span-color: black;
+  --post-border-color: black;
   /*Mobile Nav*/
   --mb-bg-color: white;
   --mb-list-color: black;
@@ -32,15 +36,20 @@
   --logout-icon: url('img/off.svg');
   --darkmode-icon: url('img/dark.svg');
   --close-icon: url('img/close.svg');
+  /*POST*/
+  --wave-bg: url('../img/wave.svg');
+  --article-text-color: black;
+  --article-info-color: rgb(82, 80, 80);
+  --article-tag-text-color:#fff7f0;
 }
 
 [data-theme='dark'] {
-  --main-bg-color-one: rgba(101, 78, 163, 0.8);
-  --main-bg-color-two: rgba(234, 175, 200, 0.8);
+  --main-bg-color-one: rgba(101, 78, 163, 1);
+  --main-bg-color-two: rgba(234, 175, 200, 1);
   --body-bg-color: #14161b;
   --card-bg-color: #22252b;
-  --card-title-color: #efdfdc;
-  --card-preview-color: #b7b2b2;
+  --card-title-color: #d2cfcf;
+  --card-preview-color: #bbbbbb;
   --bookmark-icon: url('img/bookmark-dark.svg');
   --bookmark-check-icon: url('img/bookmark-check-dk.svg');
   --share-icon: url('img/share-dk.svg');
@@ -50,10 +59,14 @@
   --instagram-icon: url('img/instagram-dk.svg');
   --twitter-icon: url('img/twitter-dk.svg');
   --tag-bg-color: #9d779c;
+  --large-bg-color: #544e69;
+  --medium-bg-color: #4A4453;
+  --post-title-span-color: #d2cfcf;
+  --post-border-color: #d2cfcf;
   /*Mobile Nav*/
-  --mb-bg-color:  #14161b;
-  --mb-list-color: #efdfdc;
-  --mb-profile-name-color: #efdfdc;
+  --mb-bg-color: #22252b;
+  --mb-list-color: #d2cfcf;
+  --mb-profile-name-color: #d2cfcf;
   --mb-profile-view-color: #b7b2b2;
   --home-icon: url('img/home-dk.svg');
   --bookmarked-icon: url('img/bookmark-mb-dk.svg');
@@ -63,6 +76,12 @@
   --logout-icon: url('img/off-dk.svg');
   --darkmode-icon: url('img/dark-dk.svg');
   --close-icon: url('img/close-dk.svg');
+  /*POST*/
+  --wave-bg: url('../img/wave-dk.svg');
+  --article-text-color: #d2cfcf;
+  --article-info-color: black;
+  --article-tag-text-color: black;
+
   
 }
 /* DARK GRADIENT linear-gradient(to left, #b2fefa, #0ed2f7);

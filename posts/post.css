@@ -10,8 +10,8 @@
 .gradient {
   background: linear-gradient(
     to right,
-    rgba(255, 195, 160, 0.8),
-    rgb(255, 175, 189, 0.8)
+    var(--main-bg-color-one),
+    var(--main-bg-color-two)
   );
 }
 
@@ -46,7 +46,7 @@
 }
 .article-tag {
   background: #bb869d;
-  color: #fff7f0;
+  color: var(--article-tag-text-color);
 }
 .article-props {
   height: 6rem;
@@ -54,7 +54,7 @@
 }
 
 .wave {
-  background: url('../img/wave.svg');
+  background: var(--wave-bg);
   background-size: cover;
   height: 5rem;
   width: 100%;
@@ -68,7 +68,7 @@
 .article-info-box {
   display: flex;
   font-size: 0.7rem;
-  color: rgb(82, 80, 80);
+  color: var(--article-info-color);
   margin-top: 0.5rem;
 }
 .icon-a {
@@ -92,6 +92,7 @@
   letter-spacing: 0.01rem;
   white-space: pre-line;
   font-weight: 300;
+  color: var(--article-text-color);
 }
 
 /* FOR DARK THEME CONSIDER #2C354A*/
