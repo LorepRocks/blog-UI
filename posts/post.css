@@ -95,4 +95,55 @@
   color: var(--article-text-color);
 }
 
+.options{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: var(--options-bg-color);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+
+}
+.options_icon{
+  transform: rotate(0deg);
+  background: var(--options-icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem auto;
+  transition: rotate 300ms linear;
+}
+.more_options{
+  transform: translatey(50rem);
+  position: fixed;
+  bottom: 4.5rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 7rem;
+  background: var(--options-bg-color);
+  border-radius: 3rem;
+  transition: transform 90ms linear;
+}
+.options_list{
+  display: flex;
+  flex-flow: column;
+  height: inherit;
+  justify-content: center;
+}
+.options_list div{
+  width: 1.1rem;
+  margin: 0.5rem auto;
+  background-size: contain;
+  height: 1.1rem;
+  background-repeat: no-repeat;
+}
+
+.show{
+  transform: translatey(0) !important;
+}
+.rotate{
+  transform: rotate(45deg) !important;
+}
 /* FOR DARK THEME CONSIDER #2C354A*/

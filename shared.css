@@ -41,6 +41,8 @@
   --article-text-color: black;
   --article-info-color: rgb(82, 80, 80);
   --article-tag-text-color:#fff7f0;
+  --options-bg-color: #ffcfb3;
+  --options-icon: url('../img/more.svg');
 }
 
 [data-theme='dark'] {
@@ -59,10 +61,10 @@
   --instagram-icon: url('img/instagram-dk.svg');
   --twitter-icon: url('img/twitter-dk.svg');
   --tag-bg-color: #9d779c;
-  --large-bg-color: #544e69;
-  --medium-bg-color: #4A4453;
-  --post-title-span-color: #d2cfcf;
-  --post-border-color: #d2cfcf;
+  --large-bg-color: #22252b;
+  --medium-bg-color: #22252b;
+  --post-title-span-color: #ce9ac0;
+  --post-border-color: #ce9ac0;
   /*Mobile Nav*/
   --mb-bg-color: #22252b;
   --mb-list-color: #d2cfcf;
@@ -81,6 +83,8 @@
   --article-text-color: #d2cfcf;
   --article-info-color: black;
   --article-tag-text-color: black;
+  --options-bg-color: #7d4576;
+  --options-icon : url('../img/more-dk.svg');
 
   
 }
@@ -153,6 +157,30 @@ nav {
 }
 .shadow {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.19);
+}
+
+.post__options_save {
+  background-image: var(--bookmark-icon);
+}
+.bookmark {
+  fill: green;
+}
+.saved {
+  background-image: var(--bookmark-check-icon);
+}
+
+.post__options_share {
+  background-image: var(--share-icon);
+}
+.sending {
+  background-image: url('img/sending.svg');
+}
+.post__options_pin {
+  background-image: var(--pin-icon);
+}
+
+.pinned {
+  background-image: var(--pinned-icon);
 }
 
 /*Mobile SideBar*/

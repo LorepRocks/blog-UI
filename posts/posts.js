@@ -1,11 +1,18 @@
-let prevScrollpos = window.pageYOffset;
-window.onscroll = () => {
-  let currentScrollPos = window.pageYOffset;
-  let headerEl = document.querySelector('header');
-  if (prevScrollpos > currentScrollPos) {
-    headerEl.classList.remove('hide-header').add('show-header');
-  } else {
-    headerEl.classList.remove('show-header').add('hide-header');
+var moreBtn = document.querySelector('.options');
+var moreOptions = document.querySelector('.more_options');
+var optionsIcon = document.querySelector('.options_icon');
+moreBtn.addEventListener('click', () => {
+  let visible = false;
+  moreOptions.classList.forEach(element => {
+    visible = element === 'show' ? true : false;
+  });
+  if(visible){
+    moreOptions.classList.remove('show')
+    optionsIcon.classList.remove('rotate');
+  }else{
+      moreOptions.classList.add('show');
+      optionsIcon.classList.add('rotate');
   }
-  prevScrollpos = currentScrollPos;
-};
+  
+});
+

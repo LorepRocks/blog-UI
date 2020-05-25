@@ -9,9 +9,12 @@ var profilePhoto = document.querySelector('.profile_photo');
 var navElements = document.querySelector('.mobile-nav__items');
 var toogleBtn = document.querySelector('.switch input[type="checkbox"]');
 
+
 if(localStorage.getItem('dark')){
+  toogleBtn.checked = true;
   document.documentElement.setAttribute('data-theme', 'dark');
 }
+
 profilePhoto.addEventListener('click', () => {
   console.log('____photo clicked!');
   let visible = false;

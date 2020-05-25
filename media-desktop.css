@@ -11,4 +11,9 @@
     height: 22rem;
     background-position: 50% 100%;
   }
+
+  .more_options{
+    bottom: 23rem;
+    left: 8rem;
+  }
 }
