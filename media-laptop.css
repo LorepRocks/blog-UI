@@ -221,20 +221,28 @@
     height: 13rem;
     background-position: 50% 64%;
   }
-  .options{
+  .options {
     display: none;
   }
-  .more_options{
+  .more_options {
     transform: none;
     bottom: 7rem;
     left: 3rem;
     width: 3.5rem;
     height: 10rem;
   }
-  .options_list div{
-    width: 1.5rem;
+  .options_list div {
+    width: 1.4rem;
     margin: 0.7rem auto;
     height: 1.8rem;
   }
-
+  .post__options_save:hover {
+    background: var(--bookmark-check-icon) no-repeat;
+  }
+  .post__options_share:hover {
+    background: var(--shared-icon) no-repeat;
+  }
+  .post__options_pin:hover {
+    background: var(--pinned-icon) no-repeat;
+  }
 }

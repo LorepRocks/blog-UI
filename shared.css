@@ -13,6 +13,7 @@
   --bookmark-icon: url('img/bookmark.svg');
   --bookmark-check-icon: url('img/bookmark-check.svg');
   --share-icon: url('img/share.svg');
+  --shared-icon: url('img/shared.svg');
   --pin-icon: url('img/pin.svg');
   --pinned-icon: url('img/pinned.svg');
   --lock-icon: url('img/lock.svg');
@@ -32,7 +33,7 @@
   --bookmarked-icon: url('img/bookmark-check.svg');
   --like-icon: url('img/like.svg');
   --settings-icon: url('img/settings.svg');
-  --help-icon:  url('img/information.svg');
+  --help-icon: url('img/information.svg');
   --logout-icon: url('img/off.svg');
   --darkmode-icon: url('img/dark.svg');
   --close-icon: url('img/close.svg');
@@ -40,9 +41,10 @@
   --wave-bg: url('../img/wave.svg');
   --article-text-color: black;
   --article-info-color: rgb(82, 80, 80);
-  --article-tag-text-color:#fff7f0;
+  --article-tag-text-color: #fff7f0;
   --options-bg-color: #ffcfb3;
   --options-icon: url('../img/more.svg');
+  --box-shadow-hover: rgba(0, 0, 0, 0.21);
 }
 
 [data-theme='dark'] {
@@ -55,9 +57,10 @@
   --bookmark-icon: url('img/bookmark-dark.svg');
   --bookmark-check-icon: url('img/bookmark-check-dk.svg');
   --share-icon: url('img/share-dk.svg');
+  --shared-icon: url('img/shared-dk.svg');
   --pin-icon: url('img/pin-dk.svg');
   --pinned-icon: url('img/pinned-dk.svg');
-  --lock-icon:url('img/lock-dk.svg');
+  --lock-icon: url('img/lock-dk.svg');
   --instagram-icon: url('img/instagram-dk.svg');
   --twitter-icon: url('img/twitter-dk.svg');
   --tag-bg-color: #9d779c;
@@ -83,10 +86,9 @@
   --article-text-color: #d2cfcf;
   --article-info-color: black;
   --article-tag-text-color: black;
-  --options-bg-color: #7d4576;
-  --options-icon : url('../img/more-dk.svg');
-
-  
+  --options-bg-color: #6a51a4;
+  --options-icon: url('../img/more-dk.svg');
+  --box-shadow-hover: rgb(7, 8, 10);
 }
 /* DARK GRADIENT linear-gradient(to left, #b2fefa, #0ed2f7);
 --main-bg-color-two: rgba(178, 254, 250, 0.8);
@@ -414,4 +416,26 @@ footer {
 
 .footer_option_twitter {
   background: var(--twitter-icon);
+}
+
+/*Animations*/
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20%);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20%);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
