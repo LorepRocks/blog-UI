@@ -53,7 +53,7 @@
   --body-bg-color: #14161b;
   --card-bg-color: #22252b;
   --card-title-color: #d2cfcf;
-  --card-preview-color: #bbbbbb;
+  --card-preview-color: #cccccc;
   --bookmark-icon: url('img/bookmark-dark.svg');
   --bookmark-check-icon: url('img/bookmark-check-dk.svg');
   --share-icon: url('img/share-dk.svg');
@@ -205,7 +205,7 @@ nav {
   width: 60%;
   right: 0;
   top: 0;
-  transition: transform 300ms linear;
+  transition: transform 300ms ease;
   color: black;
   background: var(--mb-bg-color);
 }
@@ -421,21 +421,21 @@ footer {
 /*Animations*/
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(-20%);
+    opacity: 0;
+    transform: translateY(-20%);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes fadeInUp {
   from {
-      opacity: 0;
-      transform: translateY(20%);
+    opacity: 0;
+    transform: translateY(20%);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
